@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/rapper1Fragment">
+
+    <fragment
+        android:id="@+id/rapper1Fragment"
+        android:name="com.example.rapper_list.Rapper1Fragment"
+        android:label="fragment_rapper1"
+        tools:layout="@layout/fragment_rapper1" >
+        <action
+            android:id="@+id/action_rapper1Fragment_to_rapper2Fragment"
+            app:destination="@id/rapper2Fragment" />
+        <action
+            android:id="@+id/action_rapper1Fragment_to_rapper3Fragment"
+            app:destination="@id/rapper3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rapper2Fragment"
+        android:name="com.example.rapper_list.Rapper2Fragment"
+        android:label="fragment_rapper2"
+        tools:layout="@layout/fragment_rapper2" >
+        <action
+            android:id="@+id/action_rapper2Fragment_to_rapper1Fragment"
+            app:destination="@id/rapper1Fragment" />
+        <action
+            android:id="@+id/action_rapper2Fragment_to_rapper3Fragment"
+            app:destination="@id/rapper3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rapper3Fragment"
+        android:name="com.example.rapper_list.Rapper3Fragment"
+        android:label="fragment_rapper3"
+        tools:layout="@layout/fragment_rapper3" >
+        <action
+            android:id="@+id/action_rapper3Fragment_to_rapper1Fragment"
+            app:destination="@id/rapper1Fragment" />
+        <action
+            android:id="@+id/action_rapper3Fragment_to_rapper2Fragment"
+            app:destination="@id/rapper2Fragment" />
+    </fragment>
+</navigation>
