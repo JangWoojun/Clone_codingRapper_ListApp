@@ -33,7 +33,6 @@ class Rapper2Fragment : Fragment() {
         items.add("눈이 오던 날")
         items.add("아퍼")
         items.add("예쁘잖아")
-        items.add("야망")
         items.add("내일은 없다")
         items.add("엉망진창")
         items.add("키보드")
