@@ -28,7 +28,8 @@ class RVAdapter (val items:MutableList<String>):RecyclerView.Adapter<RVAdapter.V
     inner class ViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bindItems(item : String) {
 
-            val rv_text = itemView.findViewById<TextureView>(R.id.RvTextId)
+            val rv_text = itemView.findViewById<TextView>(R.id.RvTextId)
+            rv_text.text = item
 
         }
     }
